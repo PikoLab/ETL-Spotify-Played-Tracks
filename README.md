@@ -1,7 +1,7 @@
 # ETL for Personal Spotify Played Tracks
 
 
-### 1. Purpose: 
+### 1. Purpose 
 Build personal played trackes database by extracting data through Spotify API every day! 
 
 ### 2. ETL Process
