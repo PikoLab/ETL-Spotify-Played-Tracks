@@ -38,7 +38,7 @@ mkdir -p  spotify/app
 cd spotify
 ```
 2. Create Container
-```cmd
+```dockerfile
 docker run \
 --name jupyter \
 -d \
