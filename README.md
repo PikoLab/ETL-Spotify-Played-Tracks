@@ -30,4 +30,25 @@ from datetime import datetime
 import datetime
 ```
 
+### 4.Option: Use Containers for Development
+Use Docker to build Python-Jupyter Environment
+1. Create folder
+```cmd
+mkdir -p  spotify/app
+cd spotify
+```
+2. Create Container
+```cmd
+docker run \
+--name jupyter \
+-d \
+-p 8888:8888 \
+-v $(pwd)/app:/home/jovyan/work \
+jupyter/base-notebook \
+start-notebook.sh --NotebookApp.token=''
+```
+3. Open Browser and Key in `IP_Address:port_number` or `127.0.0.1:8888`
+
+
+
 
